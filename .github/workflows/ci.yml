@@ -1,5 +1,9 @@
 name: ci-js-workflow
-on: [push]
+on: 
+  pull-request:
+    branches:
+      - main
+      
 jobs:
   check-application:
     runs-on: ubuntu-latest
