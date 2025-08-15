@@ -1,10 +1,10 @@
 {
   "name": "sum",
   "version": "1.0.0",
-  "main": "Sum.js",
+  "main": "sum.js",
   "scripts": {
     "test": "jest",
-    "run-sum": "node src/Sum.js"
+    "run-sum": "node src/sum.js"
   },
   "repository": {
     "type": "git",
