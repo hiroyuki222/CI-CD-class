@@ -3,7 +3,7 @@ on:
   pull-request:
     branches:
       - main
-      
+
 jobs:
   check-application:
     runs-on: ubuntu-latest
@@ -23,4 +23,4 @@ jobs:
         run: npm test
 
       - name: Run sum script
-        run: npm run run-sum
+        run: npm run run-sum 
