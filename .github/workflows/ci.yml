@@ -1,6 +1,6 @@
 name: ci-js-workflow
 on: 
-  pull-request:
+  pull_request:
     branches:
       - main
 
