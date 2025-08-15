@@ -1,9 +1,10 @@
 name: ci-js-workflow
 on: 
-  pull-request:
+  pull_request:
     branches:
       - main
-      
+      - develop
+
 jobs:
   check-application:
     runs-on: ubuntu-latest
@@ -23,4 +24,4 @@ jobs:
         run: npm test
 
       - name: Run sum script
-        run: npm run run-sum
+        run: npm run run-sum 
