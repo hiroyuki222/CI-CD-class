@@ -10,4 +10,4 @@ module.exports = main;
 
 if (require.main === module) {
     console.log(main(10, 20));
-}
+} 
