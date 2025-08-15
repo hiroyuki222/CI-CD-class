@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "Sum.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "run-sum": "node src/Sum.js"
   },
   "repository": {
     "type": "git",
