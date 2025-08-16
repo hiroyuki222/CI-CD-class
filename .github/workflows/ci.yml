@@ -1,9 +1,11 @@
 name: ci-js-workflow
 on: 
-  pull_request:
+  push:
     branches:
       - main
       - develop
+    pull_request:
+    types: [opened, synchronize, reopened]
 
 jobs:
   check-application:
