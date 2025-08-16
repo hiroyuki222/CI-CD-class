@@ -9,12 +9,8 @@ FNDA:1,Sum
 DA:2,1
 DA:6,1
 DA:9,1
-DA:11,1
-DA:12,0
-LF:5
-LH:4
-BRDA:11,0,0,0
-BRDA:11,0,1,1
-BRF:2
-BRH:1
+LF:3
+LH:3
+BRF:0
+BRH:0
 end_of_record

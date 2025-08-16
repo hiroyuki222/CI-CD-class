@@ -1,19 +1,23 @@
 name: ci-js-workflow
 on: 
-  pull_request:
+  push:
     branches:
       - main
       - develop
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 jobs:
   check-application:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: '14'
 
@@ -22,6 +26,11 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@v5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
       - name: Run sum script
         run: npm run run-sum 
