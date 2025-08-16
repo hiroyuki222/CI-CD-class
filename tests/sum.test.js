@@ -1,4 +1,4 @@
-const main = require('../src/Sum');
+const main = require('../src/sum');
 
 test('soma 2 + 3 = 5', () => {
   expect(main(2, 3)).toBe(5);
